@@ -21,4 +21,4 @@ class Transactions(Base):
     account_id = Column(Integer , ForeignKey("accounts.id"), nullable=False)
     amount = Column(Integer , nullable=False)
 
-    account = relationship("Account" , back_populates="transactions"    )
+    account = relationship("Account" , back_populates="transactions")
